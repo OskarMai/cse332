@@ -1,0 +1,78 @@
+
+body{
+    margin:0px;
+    padding: 0px 20px 0px 20px;
+    background:#2b2b2b;
+}
+.navbar{
+    overflow:hidden;
+    left:0;
+    top:0;
+    text-align:center;
+    background-color:#E69F00;
+    border-radius:15px;
+}
+.navbar li{
+    float: left;
+    list-style-type: none;
+    width:12.5%;
+}
+.navbar a{
+    display:block;
+    padding:15px;
+    background-color:#E69F00;
+    color: white;
+    text-decoration:none;
+    transition:0.5s background-color;
+}
+.navbar li a:hover{
+	background-color:#56B4E9;
+	color:black;
+	text-decoration:none;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(93px, auto);
+  }
+  .wrapper div{
+    background-color: #111111;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    border-radius:20px;
+  }
+  .one {
+    grid-column: 1/4;
+    grid-row: 1/5;
+  }
+  .two {
+    grid-column: 1 / 4;
+    grid-row: 5 / 10;
+    
+  }
+  .three {
+    grid-column: 4/10;
+    grid-row: 6 / 10;
+    
+  }
+  .four{
+    grid-column:10/13;
+    grid-row:1/4;
+  }
+  .five {
+    grid-column: 10/13;
+    grid-row: 4/10;
+    
+  }
+  .six {
+    grid-column: 4/10;
+    grid-row: 1/6;
+  }
+  .bar:hover{
+    fill:brown;
+    transition: 0.5s;
+  }
+  .bar2:hover{
+    fill:#D55E00;
+    transition: 0.5s;
+  }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Live coding Session</title>
+        <!-- <style>
+            .hello-world {
+                color: red;
+            }
+        </style> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css') }}">
+        <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+        {%block head%}
+        {%endblock%}
+    </head>
+    <body>
+        <div>
+            <ul class="navbar">
+                <li><a href ="{{url_for('index')}}"><b>RELOAD</b></a></li>
+            </ul>
+        </div>
+        {%block body%}
+        {%endblock%}
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{%extends 'layout.html'%}
+{%block head%}
+<script>
+    var corr_dict = JSON.parse('{{ corr_dict | tojson | safe }}')
+    var point = JSON.parse("{{points | tojson | safe}}")
+    var eig_pairs = JSON.parse("{{eig_pairs | tojson | safe}}")
+    var corr_sums = JSON.parse('{{ corr_sums | tojson | safe }}')
+    //console.log(corr_dict)
+    //console.log(corr_sums)
+</script>
+<script src="{{ url_for('static', filename = 'js/charts.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/monthChart.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/index.js') }}"></script>
+{%endblock%}
+{%block body%}
+<div class="wrapper">
+    <div class = "one">
+    </div>
+    <div class = "two"></div>
+    <div class = "three"></div>
+    <div class = "five"></div>
+    <div class = "four"></div>
+    <div class = "six"></div>
+</div>
+{%endblock%}
